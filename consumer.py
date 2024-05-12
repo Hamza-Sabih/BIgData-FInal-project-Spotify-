@@ -1,6 +1,6 @@
 from kafka import KafkaConsumer
 import json
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import threading
 
 app = Flask(__name__)
@@ -26,10 +26,16 @@ consumer_thread.daemon = True
 consumer_thread.start()
 
 # Route for home page
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('index.html', recommendations=recommendations_data)
+    if request.method == 'POST':
+        track_id = request.form.get('track_id')
+        # Process the track_id here
+    else:
+        track_id = None
+    return render_template('index.html', recommendations=recommendations_data, track_id=track_id)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5001)
+
 
