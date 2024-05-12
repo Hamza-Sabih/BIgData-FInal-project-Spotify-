@@ -275,6 +275,11 @@ Python 3.x
 Apache Spark
 pandas
 matplotlib
+![model](https://github.com/Hamza-Sabih/BIgData-FInal-project-Spotify-/assets/157700960/1e584aab-9aef-46bc-bf66-0dd44b91f8eb)
+
+![model2](https://github.com/Hamza-Sabih/BIgData-FInal-project-Spotify-/assets/157700960/2f8a1b31-1e23-4cee-a1bf-61fcac97b761)
+
+
 
 
 
