@@ -132,4 +132,3 @@ else:
 
 # Stop Spark session
 spark.stop()
-
